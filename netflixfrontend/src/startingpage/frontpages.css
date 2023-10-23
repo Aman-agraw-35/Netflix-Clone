@@ -1,0 +1,700 @@
+
+/*..................................................frontpage 1..........................................................................*/
+*{
+    margin: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+html::-webkit-scrollbar{
+    display: none;
+} 
+a{
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+}
+.parent{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(black,transparent);
+    height: 100%;
+    height: 712px;
+    border-bottom:solid  9px #232323;
+    position: relative;
+    font-family: 'Netflix Sans';
+    z-index: 1;
+}
+@media screen and (max-width :700px){
+    .parent {
+        height: 620px;
+}}
+.content{
+    width: 100%;
+}
+.parent .content .nav{
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    padding:0 10rem;
+    display: flex;
+    background: linear-gradient(black,transparent);
+    justify-content: space-between;
+    height: 5rem ;
+   
+}
+@media screen and (max-width :1240px){
+    .parent .content .nav{
+        padding:0 2rem;
+    }
+}
+
+.parent .content .nav .logo {
+    position: relative;
+    width : 160px;
+
+
+}
+.parent .content .nav .logo img{
+    position: relative;
+    z-index: 56;
+    /* height: 20px; */
+    width: 100%;
+    aspect-ratio:16/9 ;
+    object-fit: cover;
+    /* filter: brightness(110%); */
+    filter:contrast(2000%);
+}
+.parent .content .nav .btns{
+    position: relative;
+    /* width : 220px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+     height: 100%;
+     
+     
+     /* padding-left: 30rem; */
+}
+.parent .content .nav .btns .btn {
+    cursor: pointer;
+    border: 0.5px solid grey;
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1.5 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    padding: 4px 36 px;
+    width: 7rem;
+    border-radius: 5px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+    width: 126.4px;
+    text-decoration: none;
+    height: 32px;
+}
+.parent .content .nav .btns a{
+    text-decoration: none;
+    align-items: center;
+}
+.parent .content .nav .btns .btn2 {
+    cursor: pointer;
+    border: 1px solid red;
+    background-color: red;
+    font-family: var(--bs-body-font-family);
+    font-weight: 400;
+    font-size: 14 px;
+    display: flex;
+    padding: 4px 13px;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+  border-radius: 5px;
+  width: 76.9px;
+    height: 32px;
+}
+.parent .bgbg {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(50%)
+}
+.parent .content .container h1{
+    font-size: 2.7rem;
+    justify-content: center;
+    text-align: center;
+    box-sizing:border-box;
+  align-items: center;
+    color: rgb(225, 225, 225);
+    padding: 13rem 0.5rem 0.7rem;
+        font-family: 'Archivo Black';
+        font-weight: 900;
+        letter-spacing: 0;
+        margin: 0;
+position: relative;
+z-index: 90;
+display: flex;
+}
+@media screen and (max-width :620px){
+    .parent .content .container h1{
+        padding-top: 6.5rem;
+        font-size: 2rem;
+}}
+
+.parent .content .container p{
+    text-align: center;
+    box-sizing:border-box;
+    color: rgb(225, 225, 225);
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+    position: relative;
+z-index: 90;
+display: flex;
+padding: 0 1rem 0.7rem;
+font-size: 1.5rem;
+width: fit-content;
+margin: 5px auto 0;
+}
+.parent .content .container .p2 {
+    text-align: center;
+    box-sizing:border-box;
+    position: relative;
+z-index: 90;
+display: flex;
+padding: 0 1rem 0.9rem;
+font-size: 24px;
+margin: 5px auto 0;
+width: fit-content;
+
+}
+
+.parent .content .container .morebtn{
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    gap : 10px ;
+}
+.parent .content .container .morebtn .btn3{
+    position: relative;
+     width : 23.897rem;
+    align-items: center;
+    gap: 2rem;
+     height: 56px ;
+     cursor: pointer;
+     border: 0.5px solid grey;
+     background-color: rgba(0,0,0,.6);
+     
+     font-weight: normal;
+     font-size: 1 rem;
+     display: flex;
+     padding-left: 14px;
+     border-radius: 5px;
+     color: #b4b4ae;
+     font-family: var(--bs-body-font-family);
+     font-weight: 600;
+
+   
+}
+@media screen and (max-width :620px){
+    .parent .content .container .morebtn .btn3{
+        width: min-content;
+}}
+.parent .content .container .morebtn .btn4{
+    position: relative;
+     width : 201.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 56px ;
+     cursor: pointer;
+     border: 0.5px solid red;
+     background-color: transparent;
+     font-weight: normal;
+     font-size: 1 rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+     border-radius: 5px;
+     color: white;
+     background-color: red;
+     font-size: 1.5rem;
+     font-weight: 650;
+     font-family: var(--bs-body-font-family);
+
+}
+/*.....................................................frontpge2................................................................. */
+.twopage {
+padding: 82px 0 82px;
+width: 100%;
+height: 582.25px;
+background-color: black;
+color: #efefef;
+display: flex;
+flex-direction: row;
+border-bottom:solid  9px #232323;
+padding-left: 174.6px;
+padding-right: 174.6px;
+border-bottom:solid  9px #232323;
+}
+@media screen and (max-width :1006px){
+    .twopage{
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+       padding: 0%;
+        text-align: center;
+        height:max-content;
+   align-items: center;
+
+   
+    }
+    .twopage .rowone{
+        width:fit-content;
+        height:max-content;
+        align-items: center;
+    }
+    .invert .twopage {
+    display: flex;
+    flex-direction: column-reverse;
+ }
+ .rowone h1 {
+    font-size: 1rem;
+    width: min-content;
+    padding-left: 35px;
+    height: max-content;
+}
+ .rowone p {
+    font-size: 0.8rem;
+    width: min-content;
+    padding-left: 34px;
+    font-size: smaller;
+    height: max-content;
+    padding-top: 34px;
+}
+.rowtwo h1 {
+    font-size: 1rem;
+   padding-left: 35px;
+}
+.rowtwo p {
+    width: 70%;
+    padding-left: 34px;
+    height: max-content;
+}
+.rowone{
+    height: max-content;
+    width: mi;
+width: 70%;
+}
+.rowtwo{
+width: 70%;
+height: max-content;
+}
+}
+
+
+
+@media screen and (max-width :1340px){
+    .twopage{
+    
+        width:100%;
+       padding: 5%;
+        
+}}
+
+
+
+.twopage .rowone  {
+height: 100%;
+
+width: 585px;
+/* display: flex; */
+/* text-align: left; */
+display: flex;
+flex-direction: column;
+box-sizing:border-box;
+align-items: left;
+letter-spacing: 0;
+color: rgb(225, 225, 225);
+justify-content: center;
+
+}
+
+.twopage .rowone h1 {
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    font-family: 'Archivo Black';
+    font-weight: 900;
+    height: fit-content;
+    width: fit-content;
+    
+}
+.twopage .rowone p {
+font-size: 1.5rem;
+margin-top: 16px;
+}
+
+.twopage .rowtwo {
+    height: 100%px;
+    font-size: 2.7rem;
+    width: 585px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: relative;
+}
+.twopage .rowtwo .img_bg{
+    position: relative;
+    width: 640px;
+    height: 480px;
+}
+.twopage .rowtwo .img_bg img{
+position: relative;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 2;
+}
+.twopage .rowtwo .img_bg video{
+    position: absolute;
+    left: 3.53rem;
+    top: 6.25rem;
+    width: 466px;
+    height: 261px;
+    aspect-ratio: 16/9;
+    z-index: 1;
+}
+/*.....................................................frontpage3..............................................................*/
+.twopage .rowtwo img{
+    height: 100% ;
+    width :100% ;
+}
+.twopage .rowtwo .smallbox {
+    height: 103.2px;
+    width: 315.86px;
+    display: flex;
+    position: absolute;
+    top : 19rem;
+    left : 8rem;
+    border: 1.6px solid grey;
+    border-radius: 10px;
+    background-color: black;
+    padding: 8px 16px;
+    display: flex;
+ 
+    z-index: 5;
+    justify-content: center;
+}
+.twopage .rowtwo .smallbox img {
+    width : 57.14px ;
+    margin-right: 16px;
+}
+.twopage .rowtwo .smallbox p {
+font-weight: 700;
+ margin: auto 0;
+ width: 167.53px;
+ font-size: 16px;
+} 
+.twopage .rowtwo .smallbox p .download{
+  font-size: 16px;
+ color: #0071eb;
+ font-weight: 500;
+}
+.twopage .rowtwo .smallbox .logo {
+    height: 60px;
+    width:48px ;
+
+}
+.twopage .rowtwo .smallbox .logo img{
+    height: 48px;
+    width:48px ;
+
+}
+/*........................................................frontpage4.................................................................*/
+
+.twopage .rowtwo img {
+    height: 100% ;
+    width :100% ;
+    z-index: 3;
+}
+
+.twopage .rowtwo video {
+ position: absolute;
+    left: 6.4rem;
+    top: 3.16rem;
+    width: 364.76px;
+    height: 205.98px;
+    aspect-ratio: 16/9;
+    z-index: 1;
+}
+/*.................................................frontpage5..............................................................................*/
+/*.................................................frontpage6..............................................................................*/
+.sixpage {
+    width:100% ;
+    height: 930.200px;
+
+background-color: black;
+color: #efefef;
+display: flex;
+border-bottom:solid  9px #232323;
+padding-left: 8%;
+padding-right: 8%;
+border-bottom:solid  9px #232323;
+justify-content: center;
+padding-top: 72px;
+padding-bottom: 72px;
+}
+
+@media screen and (max-width :800px)
+{
+    .sixpage {
+          width :fit-content;
+       font-size: 1rem;
+       padding-left: 5px;
+      font-weight: 100;
+        font-size: 1rem;
+        height: 970px;
+    }
+     .sixpage .box{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+     }
+
+     .sixpage .box .question {
+        height: max-content;
+        width:max-content;
+        margin:24px ;
+        font-weight: 100;
+        font-size: 1rem;
+        align-items: center;
+        }
+
+      .sixpage .box .question .bottomline .morebtn .btn3  {
+        width: 100%;
+      }
+      .sixpage .box .question .bottomline p {
+       display: flex;
+      }
+      .sixpage .box .question .bottomline .morebtn {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer{
+        height: max-content;
+        padding-left:0 ;
+        padding-right:0 ;
+      }
+      
+
+ .footer .lowerpart ul {
+    gap: 18px;
+    font-size: smaller;
+}
+}
+.sixpage .box {
+
+    justify-content: center;
+    text-align: center;
+    height: 786.4px;
+    width:100% ;
+    align-items: center;
+  
+}
+.sixpage .box h1{
+    font-size: 3rem;
+    font-family: 'Archivo Black';
+    font-weight: 900;
+}
+.sixpage .box .question {
+height: 697.600px;
+width: 100%;
+margin:24px ;
+font-weight: 100;
+align-items: center;
+}
+.sixpage .box .question li {
+padding: 24px;
+width: 90%;
+height: 84px ;
+font-size: 1.5rem;
+font-family: var(--bs-body-font-family);
+ font-weight: 600;
+text-align: left;
+background-color: #232323;
+margin-bottom: 8px;
+list-style: none ;
+}
+
+.sixpage .box .question li button {
+    font-size: 1.5rem;
+font-family: var(--bs-body-font-family);
+ font-weight: 600;
+}
+.sixpage .box .bottomline {
+    height:102px ;
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+    font-size: 1 rem;
+    align-items: center;
+    text-align: center;
+}
+.sixpage .box .bottomline p {
+    font-size: 20px;
+    font-family: var(--bs-body-font-family);
+   font-weight: 500;
+   margin-top: 45.6px;
+}
+.sixpage .box .question .bottomline .morebtn {
+    cursor: pointer;
+
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    gap : 10px ;
+    align-items: center;
+}
+.sixpage .box .question .bottomline .morebtn .btn3 {
+    position: relative;
+    width : 382.35px;
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+    height: 56px ;
+    cursor: pointer;
+    border: 0.5px solid grey;
+    background-color: #0f0f0f;
+    font-weight: normal;
+    font-size: 1 rem;
+    display: flex;
+    padding-left: 14px;
+    border-radius: 5px;
+    color: #b4b4ae;
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+
+}
+.sixpage .box .question .bottomline .morebtn .btn4 {
+    position: relative;
+     width : 201.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     height: 56px ;
+     cursor: pointer;
+     border: 0.5px solid red;
+     background-color: transparent;
+     font-weight: normal;
+     font-size: 1 rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+     border-radius: 5px;
+     color: white;
+     background-color: red;
+     font-size: 1.5rem;
+     font-weight: 650;
+     font-family: var(--bs-body-font-family);
+
+}
+
+/*...................................................frontpage7............................................................................*/
+.footer{
+    height: 463.4px;
+    width: 1519..2px;
+    background-color: black;
+    padding: 60px 12%;
+ font-family:  var(--bs-body-font-family) ;
+   color: #ffffffb3;
+   font-weight: 400;
+}
+.footer .upperpart {
+    height: 44px;
+    width: 100%;
+    padding: 12px 0;
+ display: inline-block;
+}
+.footer .upperpart a{
+    color : #ffffffb3;
+}
+.footer .lowerpart {
+    height: 201px;
+    width: 100%;
+    padding: 12px 0;
+    position: relative;
+    display: inline-block;
+
+
+}
+.footer .lowerpart ul{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    padding-left: 0%;
+    gap: 12px ;
+    margin: 0%;
+    padding: 12px 0;
+    height: 177px;
+}
+
+.footer .lowerpart ul li {
+    list-style-type: none;
+    height: 21px;
+}
+
+
+.footer .lowerpart ul li a {
+    color: #ffffffb3;
+}
+.footer .btn1copy {
+    height: 56px;
+    width: 100%;
+    padding: 12px 0;
+    display: inline-block;
+   align-items: center;
+   
+}
+.footer .btn1copy a .btn5 {
+    cursor: pointer;
+    border: 0.5px solid grey;
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1.5 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    padding: 4px 36 px;
+    width: 7rem;
+    border-radius: 5px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+    width: 126.4px;
+    height: 32px;
+   
+}
+.footer .btn1copy a {
+    text-decoration: none;
+}
+.footer .name {
+    height: 42.4px;
+    width: 100%;
+    padding: 12px 0;
+    display: inline-block;
+
+}
