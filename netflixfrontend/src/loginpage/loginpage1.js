@@ -9,7 +9,7 @@ function Loginpage1(){
     const [user, setUser] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:8000/p')
+    axios.get('https://server-9iiw.onrender.com/p')
       .then((response) => {
         setUser(response.data);
       })
@@ -35,7 +35,7 @@ function Loginpage1(){
   if(name !==  "" ){
 
   try {
-    const response =  await axios.post('http://localhost:8000/data', {name });
+    const response =  await axios.post('https://server-9iiw.onrender.com/data', {name });
     console.log(response.data.message);
  
     navigate("/browse");
