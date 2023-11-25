@@ -24,7 +24,7 @@ function Frontpage6() {
 
 
   try {
-    const response =  await axios.post('http://localhost:8000/p', {name });
+    const response =  await axios.post('https://server-9iiw.onrender.com/p', {name });
    if(response.data.message==='found user'){
     navigate("/login");
   }
