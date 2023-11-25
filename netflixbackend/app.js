@@ -10,7 +10,7 @@ var userrr="";
 var pass="" ;
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'http://localhost:3000' 
+  origin: 'https://netflix-clone-psi-ten-46.vercel.app/' 
 }));
 
 
