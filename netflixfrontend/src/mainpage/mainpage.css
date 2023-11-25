@@ -451,13 +451,13 @@ z-index: 1600;
         padding-top: 3px;
     }
     .card .blackspace .bottom {
-        color: #3aec40e1;
-        font-size: 16px;
+     
+        font-size: 10px;
     }
     .card .blackspace .bottom p {
-        color: #34f73bf7;
+        color: #fff;
         font-weight: 600;
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
     
  

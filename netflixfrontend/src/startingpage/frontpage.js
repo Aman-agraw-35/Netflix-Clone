@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useState} from 'react';
 import {ChevronRight } from 'lucide-react';
 import { Globe } from 'lucide-react';

@@ -1,5 +1,3 @@
-
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useState , useEffect} from 'react';
 import axios from 'axios';
 import { Search } from 'lucide-react';
@@ -11,20 +9,19 @@ import { Facebook ,Instagram ,Youtube ,Twitter } from 'lucide-react';
 function Searchpage(){
     
 
-   const [bgColor, setBgColor] = useState(' rgba(0,0,0,.0001)'); // Initial background color
-   const scrollThreshold = 70; // Adjust this value as needed
+   const [bgColor, setBgColor] = useState(' rgba(0,0,0,.0001)'); 
+   const scrollThreshold = 70;
    useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > scrollThreshold) {
-        setBgColor('#141414'); // Change background color when scrolling past the threshold
+        setBgColor('#141414');
       } else {
-        setBgColor(' rgba(0,0,0,.0001)');// Reset background color
+        setBgColor(' rgba(0,0,0,.0001)');
       }
     };
 
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

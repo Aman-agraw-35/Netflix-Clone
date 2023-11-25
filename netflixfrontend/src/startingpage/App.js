@@ -1,5 +1,3 @@
-
-
 import Frontpage from "./frontpage.js";
 import Frontpage2 from "./frontpage2.js";
 import Frontpage3 from "./frontpage3.js";
@@ -11,8 +9,7 @@ import Frontpage7 from "./frontpage7.js";
 
 function App() {
     return(
-        <div>
-            
+        <div>   
             <Frontpage/>
             <Frontpage2/>
             <Frontpage3/>

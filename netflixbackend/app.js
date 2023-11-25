@@ -2,7 +2,6 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import mongoose from "mongoose";
-import  http from 'https';
 import 'dotenv/config'
 const app = express();
 var user = "";
@@ -15,31 +14,6 @@ app.use(cors({
 }));
 
 
-const options = {
-  method: 'GET',
-  hostname: 'api.themoviedb.org',
-  port: null,
-  path: '/3/authentication',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkY2U1MzA1NWU1NjU2N2NmMjUzZjAxYjNhNTBmYWQ0YiIsInN1YiI6IjY0ZTM1MmExMDc2Y2U4NDNiOGQ0Zjg5MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.uidfxpD8kzb4JipNhBjAGfygmDhSMqCcRxPPS0i_2gs'
-  }
-};
-
-const req = http.request(options, function (res) {
-  const chunks = [];
-
-  res.on('data', function (chunk) {
-    chunks.push(chunk);
-  });
-
-  res.on('end', function () {
-    const body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-});
-
-req.end();
 
 const cat = process.env.pass ;
 

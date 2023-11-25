@@ -1,11 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useState , useEffect} from 'react';
-/*import Data from './Data';
-import Data2 from './Data2';
-import Data3 from './Data3';
-import Data4 from './Data4';
-import Data5 from './Data5';
-import Data6 from './Data6'; */
 import axios from 'axios';
 import { Search } from 'lucide-react';
 import { Info } from 'lucide-react';
@@ -39,10 +32,9 @@ function Main1() {
   const [searc ,setSearc] = useState([]);
   const [click ,setClick]=useState(true);
   const [query ,setquery]=useState('');
-
   const apiKey = 'dce53055e56567cf253f01b3a50fad4b';
-const baseUrl = 'https://api.themoviedb.org/3';
-const imgfirst = 'https://image.tmdb.org/t/p/w500';
+  const baseUrl = 'https://api.themoviedb.org/3';
+  const imgfirst = 'https://image.tmdb.org/t/p/w500';
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -156,8 +148,6 @@ const popularMovies = response.data.results;
   console.error('Error fetching data from TMDb:', error);
 });
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 axios.get(`https://api.themoviedb.org/3/search/movie?query=${query}&api_key=dce53055e56567cf253f01b3a50fad4b`)
 .then((response) => {
@@ -206,6 +196,7 @@ const popularMovies = response.data.results;
     });
   };
   
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   const handlePrevClic = () => {
     setActiveInde((prevIndex) => {
       
@@ -232,6 +223,7 @@ const popularMovies = response.data.results;
    });
   };
 
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   const handlePrevCli = () => {
     setActiveInd((prevIndex) => {
       
@@ -258,6 +250,7 @@ const popularMovies = response.data.results;
    });
   };
 
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   const handlePrevCl = () => {
     setActiveIn((prevIndex) => {
       
@@ -283,7 +276,7 @@ const popularMovies = response.data.results;
     }
    });
   };
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   const handlePrevC = () => {
     setActiveI((prevIndex) => {
       
@@ -309,6 +302,7 @@ const popularMovies = response.data.results;
     }
    });
   };
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   const handlePrev = () => {
     setActive((prevIndex) => {
@@ -335,6 +329,7 @@ const popularMovies = response.data.results;
     }
    });
   };
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
    const [condition ,setCondition ] = useState(0);
    const clicked = () => {
@@ -905,6 +900,5 @@ const popularMovies = response.data.results;
              </div>
         </div>
         )
-        //dce53055e56567cf253f01b3a50fad4b
     }  
     export default Main1 ;
