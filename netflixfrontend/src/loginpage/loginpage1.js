@@ -12,7 +12,7 @@ function Loginpage1(){
     axios.get('https://server-9iiw.onrender.com/p')
       .then((response) => {
         setUser(response.data);
-          console.log(data);
+          console.log(response.data);
       })
       .catch((error) => {
         console.error('Error retrieving data:', error);
