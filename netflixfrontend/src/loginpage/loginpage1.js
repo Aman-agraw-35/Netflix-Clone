@@ -12,6 +12,7 @@ function Loginpage1(){
     axios.get('https://server-9iiw.onrender.com/p')
       .then((response) => {
         setUser(response.data);
+          console.log(data);
       })
       .catch((error) => {
         console.error('Error retrieving data:', error);
@@ -37,7 +38,6 @@ function Loginpage1(){
   try {
     const response =  await axios.post('https://server-9iiw.onrender.com/data', {name });
     console.log(response.data.message);
- 
     navigate("/browse");
   } catch (error) {
     console.error('Error submitting email:', error);
