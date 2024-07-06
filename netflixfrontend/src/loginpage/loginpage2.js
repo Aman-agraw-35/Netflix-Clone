@@ -10,7 +10,7 @@ function Loginpage2(){
     const [inpass , setinpass] = useState(false);
     const [learn ,setlearn] =useState(false);
     useEffect(() => {
-    axios.get('https://server-9iiw.onrender.com/p')
+    axios.get('https://netflix-clone-wicc.onrender.com/p')
       .then((response) => {
         setUser(response.data);
       })
@@ -46,7 +46,7 @@ function handleChang(event){
   if(pass !==  "" ){
 
   try {
-    const response =  await axios.post('https://server-9iiw.onrender.com/datas', {email : {userrr} , password : {pass}} );
+    const response =  await axios.post('https://netflix-clone-wicc.onrender.com/datas', {email : {userrr} , password : {pass}} );
     if(response.data.message==='found user'){
       navigate("/browse");
     }
