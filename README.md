@@ -4,7 +4,7 @@ Welcome to this repository containing a fully working Netflix clone built using 
 
 Please note that this website is for educational purposes only and is intended to be used as a portfolio piece. It is not intended for commercial or monetary gain and is not affiliated with Netflix Inc.
 
-##Alert
+## Alert
 The Indian government has blocked TMDB and different ISP's are imposing the block differently than others. For some it seems as though it's just a DNS block, which means you can change your nameservers to get around it. Others seem to do more than that.
 Because of that, the react cards might not be visible on local DNS. Do change your DNS while visiting the site and do checkout my code .
 
